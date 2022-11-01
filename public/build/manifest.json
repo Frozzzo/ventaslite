@@ -1,0 +1,46 @@
+{
+  "resources/theme/assets/fonts/nucleo-icons.eot": {
+    "file": "assets/nucleo-icons.f899f875.eot",
+    "src": "resources/theme/assets/fonts/nucleo-icons.eot"
+  },
+  "resources/theme/assets/fonts/nucleo-icons.woff2": {
+    "file": "assets/nucleo-icons.3180896c.woff2",
+    "src": "resources/theme/assets/fonts/nucleo-icons.woff2"
+  },
+  "resources/theme/assets/fonts/nucleo-icons.woff": {
+    "file": "assets/nucleo-icons.daa807b2.woff",
+    "src": "resources/theme/assets/fonts/nucleo-icons.woff"
+  },
+  "resources/theme/assets/fonts/nucleo-icons.ttf": {
+    "file": "assets/nucleo-icons.655956cd.ttf",
+    "src": "resources/theme/assets/fonts/nucleo-icons.ttf"
+  },
+  "resources/theme/assets/fonts/nucleo-icons.svg": {
+    "file": "assets/nucleo-icons.be977573.svg",
+    "src": "resources/theme/assets/fonts/nucleo-icons.svg"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app.1825f260.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers.f037b798.js"
+    ]
+  },
+  "resources/js/scripts.js": {
+    "file": "assets/scripts.826050d5.js",
+    "src": "resources/js/scripts.js",
+    "isEntry": true,
+    "imports": [
+      "__commonjsHelpers.f037b798.js"
+    ]
+  },
+  "__commonjsHelpers.f037b798.js": {
+    "file": "assets/_commonjsHelpers.f037b798.js"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app.2cc3a526.css",
+    "src": "resources/sass/app.scss",
+    "isEntry": true
+  }
+}
