@@ -1,6 +1,1 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
-/* @import url('https://kit.fontawesome.com/42d5adcbca.js'); */
-@import '../theme/assets/css/material-dashboard.css';
-@import '../theme/assets/css/nucleo-icons.css';
-@import '../theme/assets/css/nucleo-svg.css';
+@import '../theme/css/volt.css';

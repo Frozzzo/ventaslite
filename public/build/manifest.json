@@ -1,45 +1,29 @@
 {
-  "resources/theme/assets/fonts/nucleo-icons.eot": {
-    "file": "assets/nucleo-icons.f899f875.eot",
-    "src": "resources/theme/assets/fonts/nucleo-icons.eot"
-  },
-  "resources/theme/assets/fonts/nucleo-icons.woff2": {
-    "file": "assets/nucleo-icons.3180896c.woff2",
-    "src": "resources/theme/assets/fonts/nucleo-icons.woff2"
-  },
-  "resources/theme/assets/fonts/nucleo-icons.woff": {
-    "file": "assets/nucleo-icons.daa807b2.woff",
-    "src": "resources/theme/assets/fonts/nucleo-icons.woff"
-  },
-  "resources/theme/assets/fonts/nucleo-icons.ttf": {
-    "file": "assets/nucleo-icons.655956cd.ttf",
-    "src": "resources/theme/assets/fonts/nucleo-icons.ttf"
-  },
-  "resources/theme/assets/fonts/nucleo-icons.svg": {
-    "file": "assets/nucleo-icons.be977573.svg",
-    "src": "resources/theme/assets/fonts/nucleo-icons.svg"
+  "resources/theme/assets/Fonts/BebasNeue-Regular.ttf": {
+    "file": "assets/BebasNeue-Regular.830ea186.ttf",
+    "src": "resources/theme/assets/Fonts/BebasNeue-Regular.ttf"
   },
   "resources/js/app.js": {
-    "file": "assets/app.1825f260.js",
+    "file": "assets/app.22fca09b.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
-      "__commonjsHelpers.f037b798.js"
+      "__commonjsHelpers.b8add541.js"
     ]
   },
   "resources/js/scripts.js": {
-    "file": "assets/scripts.826050d5.js",
+    "file": "assets/scripts.c0c0a6f0.js",
     "src": "resources/js/scripts.js",
     "isEntry": true,
     "imports": [
-      "__commonjsHelpers.f037b798.js"
+      "__commonjsHelpers.b8add541.js"
     ]
   },
-  "__commonjsHelpers.f037b798.js": {
-    "file": "assets/_commonjsHelpers.f037b798.js"
+  "__commonjsHelpers.b8add541.js": {
+    "file": "assets/_commonjsHelpers.b8add541.js"
   },
   "resources/sass/app.scss": {
-    "file": "assets/app.2cc3a526.css",
+    "file": "assets/app.1a21d57f.css",
     "src": "resources/sass/app.scss",
     "isEntry": true
   }
