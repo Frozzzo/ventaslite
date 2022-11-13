@@ -18,6 +18,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('name', 100);
             $table->string('image', 100)->nullable();
+            $table->string('barcode', 100)->nullable();
             $table->string('alerts', 100)->nullable();
             $table->decimal('cost', 10, 2)->default(0);
             $table->decimal('price', 10, 2)->default(0);

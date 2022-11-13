@@ -32,10 +32,7 @@
 <meta name="msapplication-TileColor" content="#ff0000">
 <meta name="theme-color" content="#ff0000">
 
-
-<!-- Volt CSS -->
-<link type="text/css" href="../css/volt.css" rel="stylesheet">
-
+@livewireStyles
 <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
 @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/js/scripts.js'])
 
@@ -43,7 +40,6 @@
 
 <body>
 
-        <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
 <nav class="navbar navbar-dark navbar-theme-primary px-4 col-12 d-lg-none">
     <a class="navbar-brand me-lg-5" href="../index.html">
         <img class="navbar-brand-dark" src="{{ asset('theme\assets\img\favicon\favicon-Logo.png') }}" alt="Volt logo" /> <img class="navbar-brand-light" src="../assets/img/favicon/favicon-Logo.png" alt="Leo logo" />
@@ -66,50 +62,9 @@
            
 
 @include('layouts.theme.footer')
-</main>
+</main>  
 
-    <!-- Core -->
-<!-- <script src="../vendor/@popperjs/core/dist/umd/popper.min.js"></script> -->
-{{-- <script src="../vendor/bootstrap/dist/js/bootstrap.min.js"></script> --}}
-
-<!-- Vendor JS -->
-{{-- <script src="../vendor/onscreen/dist/on-screen.umd.min.js"></script> --}}
-
-<!-- Slider -->
-{{-- <script src="../vendor/nouislider/distribute/nouislider.min.js"></script> --}}
-
-<!-- Smooth scroll -->
-{{-- <script src="../vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script> --}}
-
-<!-- Charts -->
-<!-- <script src="../vendor/chartist/dist/chartist.min.js"></script>
-<script src="../vendor/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script> -->
-
-<!-- Datepicker -->
-<!-- <script src="../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script> -->
-
-<!-- Sweet Alerts 2 -->
-<!-- <script src="../vendor/sweetalert2/dist/sweetalert2.all.min.js"></script> -->
-
-<!-- Moment JS -->
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script> -->
-
-<!-- Vanilla JS Datepicker -->
-<!-- <script src="../vendor/vanillajs-datepicker/dist/js/datepicker.min.js"></script> -->
-
-<!-- Notyf -->
-<!-- <script src="../vendor/notyf/notyf.min.js"></script> -->
-
-<!-- Simplebar -->
-<!-- <script src="../vendor/simplebar/dist/simplebar.min.js"></script> -->
-
-<!-- Github buttons -->
-<!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
-
-<!-- Volt JS -->
-<!-- <script src="../assets/js/volt.js"></script> -->
-
-    
+@livewireScripts
 </body>
 
 </html>

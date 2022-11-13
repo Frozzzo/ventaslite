@@ -14,6 +14,9 @@ class Product extends Model
         'barcode',
         'cost',
         'price',
-        'alerts'
+        'stock',
+        'alerts',
+        'image',
+        'category_id'
     ];
 }
