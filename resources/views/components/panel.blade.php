@@ -6,11 +6,11 @@
       </div>
 
       <div class="col text-end">
-        <a href="javascript:void(0)" class="btn btn-dark">Agregar</a>
+        <a href="javascript:void(0)" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal">Agregar</a>
       </div>
 
     </div>
-    search
+    <x-searchBox/>
   </div>
   <div class="card-body">
     {{$body}}

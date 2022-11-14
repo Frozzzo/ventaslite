@@ -4,6 +4,7 @@
 
 @php
     $pageTittle = "Page Tittle";
+    $selectedId = 0;
 @endphp
 
 <div class="container">
@@ -58,5 +59,13 @@
             Pagination
         </x-slot>
     </x-panel>
+
+    <x-modal titulo="Titulo Modal" selectedId="1">      
+
+        <x-slot name="body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, impedit ut? Explicabo quidem minus sint assumenda ducimus, aperiam nihil hic, praesentium est nesciunt dolorum dolores, ipsum quasi quaerat id labore!
+        </x-slot>
+
+    </x-modal>    
 </div>
 @endsection
