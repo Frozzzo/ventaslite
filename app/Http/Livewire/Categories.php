@@ -16,7 +16,8 @@ class Categories extends Component
     use WithPagination;
 
     public $name, $search, $image, $selectedId, $pageTittle, $componentName;
-    private $pagination = 5;
+    private $pagination = 10;
+    protected $paginationTheme = 'bootstrap';
 
     public function mount()
     {
@@ -36,5 +37,15 @@ class Categories extends Component
         return view('livewire.category.categories', ['categories' => $data])
         ->extends('layouts.theme.app')
         ->section('content');
+    }
+
+    public function Edit($id)
+    {
+        $record = Category::find($id);
+        $this->name = $record->name;
+        $this->selectedId = $record->id;
+        $this->image = null;
+
+        $this->emit('show-modal', 'show modal!');
     }
 }
