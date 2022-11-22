@@ -15,8 +15,8 @@
             @foreach ($categories as $category)
             <tr>
                 <td>{{ $category->name }}</td>
-                <td>
-                  <img src="{{ asset('storage/categories' .$category->image) }}" alt="">
+                <td class="text-center">
+                  <img src="{{ asset('storage/categories/' .$category->image) }}" alt="" height="50">
                 </td>
                 <td class="text-center align-middle" title="Edit" class="btn btn-dark mtmobile">
                   <a 
@@ -43,7 +43,7 @@
     </x-slot>
   </x-panel>
 
-  <x-modal titulo="Categoria">
+  <x-modal titulo="Categoria" selectedId="{{$selectedId}}">
     <x-slot name="body">
       @include('livewire.category.form')
     </x-slot>

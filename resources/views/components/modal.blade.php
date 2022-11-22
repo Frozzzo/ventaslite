@@ -12,7 +12,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-dark close-modal close-btn text-info" data-bs-dismiss="modal" wire:click.prevent="resetUI()">Cerrar</button>
 
-        @if ($selectedId < 1)
+        @if ($selectedId == 0)
             <button type="button" class="btn btn-primary close-modal" wire:click.prevent="Store()">Guardar</button>
         @else
             <button type="button" class="btn btn-primary close-modal" wire:click.prevent="Update()">Actualizar</button>
