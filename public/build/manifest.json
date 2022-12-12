@@ -4,23 +4,23 @@
     "src": "resources/theme/assets/Fonts/BebasNeue-Regular.ttf"
   },
   "resources/js/app.js": {
-    "file": "assets/app.22fca09b.js",
+    "file": "assets/app.f61ca228.js",
     "src": "resources/js/app.js",
     "isEntry": true,
     "imports": [
-      "__commonjsHelpers.b8add541.js"
+      "_bootstrap.esm.aa20bfda.js"
     ]
   },
   "resources/js/scripts.js": {
-    "file": "assets/scripts.c0c0a6f0.js",
+    "file": "assets/scripts.21d6c82c.js",
     "src": "resources/js/scripts.js",
     "isEntry": true,
     "imports": [
-      "__commonjsHelpers.b8add541.js"
+      "_bootstrap.esm.aa20bfda.js"
     ]
   },
-  "__commonjsHelpers.b8add541.js": {
-    "file": "assets/_commonjsHelpers.b8add541.js"
+  "_bootstrap.esm.aa20bfda.js": {
+    "file": "assets/bootstrap.esm.aa20bfda.js"
   },
   "resources/sass/app.scss": {
     "file": "assets/app.1a21d57f.css",

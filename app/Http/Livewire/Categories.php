@@ -15,9 +15,13 @@ class Categories extends Component
     use WithFileUploads;
     use WithPagination;
 
-    public $name, $search, $image, $selectedId, $pageTittle, $componentName;
+    public  $name, $search, $image, $selectedId, $pageTittle, $componentName;
     private $pagination = 5;
     protected $paginationTheme = 'bootstrap';
+    protected $listeners = 
+    [
+        'delete-row' => 'Destroy'
+    ];
 
     public function mount()
     {
@@ -44,8 +48,8 @@ class Categories extends Component
         $record = Category::find($id, ['id', 'name', 'image']);
         $this->name = $record->name;
         $this->selectedId = $record->id;
-        $this->image = null;
-        // $this->image = $record->image;
+        // $this->image = null;
+        $this->image = $record->image;
 
         $this->emit('show-modal', 'show modal!');
     }
@@ -109,15 +113,13 @@ class Categories extends Component
             $imageName = $category->image;
 
             $category->image = $customFileName;
-            $category->save();
-
-            dd($imageName != null);
+            $category->save();            
             
             if($imageName != null)
             {
-                if(file_exists('public/categories/' . $imageName))
+                if(file_exists('storage/categories/' . $imageName))
                 {
-                    unlink('public/categories' . $imageName);
+                    unlink('storage/categories/' . $imageName);
                 }
             }            
         }
@@ -125,6 +127,23 @@ class Categories extends Component
         $this->resetUI();
 
         $this->emit('category-updated', 'Categoría actualizada!');
+    }
+
+    public function Destroy(Category $category)
+    {        
+        $imageName = $category->image; //Imagen temporal
+        $category->delete();        
+        
+        if($imageName != null)
+        {
+            if(file_exists('storage/categories/' . $imageName))
+            {
+                unlink('storage/categories/' . $imageName);
+            }
+        }
+
+        $this->resetUI();
+        $this->emit('category-deleted', 'Categoría eliminada');
     }
 
     public function resetUI()

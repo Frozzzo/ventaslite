@@ -19,4 +19,10 @@ class Product extends Model
         'image',
         'category_id'
     ];
+    
+    public function category()
+    {
+        //Indica que este producto peretenece a una categoría
+        return $this->belongsTo(Category::class);
+    }
 }

@@ -6,34 +6,35 @@
         <table class="table">
           <thead class="table-dark"
               <tr>
-                  <td class="text-center">DESCRIPCION</td>
-                  <td class="text-center">IMAGEN</td>
-                  <td class="text-center">ACTIONS</td>
+                  <td colspan="2" class="text-center">CATEGORÍA</td>
+                  {{-- <td class="text-center">IMAGEN</td> --}}
+                  <td class="text-center">ACCIONES</td>
               </tr>
           </thead>
           <tbody>
             @foreach ($categories as $category)
             <tr>
-                <td>{{ $category->name }}</td>
-                <td class="text-center">
-                  <img src="{{ asset('storage/categories/' .$category->image) }}" alt="" height="50">
+                <td class="text-center col-1">                  
+                  <img src="{{ asset('storage/categories/' . $category->image) }}" alt="" height="50">
                 </td>
+
+                <td>{{ $category->name }}</td>
+
                 <td class="text-center align-middle" title="Edit" class="btn btn-dark mtmobile">
                   <a 
                     href="javascript:void(0)"
                     wire:click="Edit({{ $category->id }})"
-                  >
-                    
+                  >                    
                     <img src="{{ asset('theme\assets\img\Icons\edit-svgrepo-com.svg') }}" alt="" height="30">                            
                   </a>
-                
+                                      
                   <a 
                     href="javascript:void(0)" 
                     title="Delete"
-                    onclick="Confirm({{ $category->id }})"
+                    onclick="Confirm({{ $category->id }}, {{ $category->products->count() }})"
                   >
                       <img src="{{ asset('theme\assets\img\Icons\delete-svgrepo-com.svg') }}" alt="" height="35">                                                        
-                  </a>
+                  </a>                  
                 </td>
             </tr>
             @endforeach
